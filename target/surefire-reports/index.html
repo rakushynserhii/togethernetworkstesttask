@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-userform_UserFormTest">
+              <span class="suite-name border-failed">userform.UserFormTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-userform_UserFormTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-userform_UserFormTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-userform_UserFormTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-userform_UserFormTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-userform_UserFormTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-userform_UserFormTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-userform_UserFormTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 8 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-userform_UserFormTest" class="hide-methods failed suite-userform_UserFormTest"> (hide)</a> <!-- hide-methods failed suite-userform_UserFormTest -->
+                      <a href="#" panel-name="suite-userform_UserFormTest" class="show-methods failed suite-userform_UserFormTest"> (show)</a> <!-- show-methods failed suite-userform_UserFormTest -->
+                    </span>
+                    <div class="method-list-content failed suite-userform_UserFormTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="ageFieldIsEmpty">ageFieldIsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="checkHeaderAgeField">checkHeaderAgeField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldWithSpaceAfterTheValue">emailFieldWithSpaceAfterTheValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldWithSpaceBeforeTheValue">emailFieldWithSpaceBeforeTheValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldWithoutAtInTheEmail">emailFieldWithoutAtInTheEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldWithoutDotsInTheDomain">emailFieldWithoutDotsInTheDomain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="sendFormWithRequiredFields">sendFormWithRequiredFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="sendFormWithoutAge">sendFormWithoutAge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-userform_UserFormTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-userform_UserFormTest" class="hide-methods passed suite-userform_UserFormTest"> (hide)</a> <!-- hide-methods passed suite-userform_UserFormTest -->
+                      <a href="#" panel-name="suite-userform_UserFormTest" class="show-methods passed suite-userform_UserFormTest"> (show)</a> <!-- show-methods passed suite-userform_UserFormTest -->
+                    </span>
+                    <div class="method-list-content passed suite-userform_UserFormTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="checkDescriptionForm">checkDescriptionForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="checkHeaderEmailField">checkHeaderEmailField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="checkHeaderForm">checkHeaderForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="checkObligatoryEmailField">checkObligatoryEmailField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldIsEmpty">emailFieldIsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="emailFieldWithoutDomainInTheEmail">emailFieldWithoutDomainInTheEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="nameFieldIsEmpty">nameFieldIsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="sendFormWithoutEmail">sendFormWithoutEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-userform_UserFormTest" title="userform.UserFormTest" hash-for-method="sendFormWithoutName">sendFormWithoutName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-userform_UserFormTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-userform_UserFormTest" class="panel userform_UserFormTest">
+          <div class="suite-userform_UserFormTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">userform.UserFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ageFieldIsEmpty">
+                  </a> <!-- ageFieldIsEmpty -->
+                  <span class="method-name">ageFieldIsEmpty</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ageField&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: afaa9e6c457f26bf278a6270e0487861
+*** Element info: {Using=id, value=ageField}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.writeText(UserFormTest.java:19)
+	at userform.UserFormTest.ageFieldIsEmpty(UserFormTest.java:163)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C44 - Проверить отображение предупреждающего сообщения и выделение блока при пустом поле 'Age'https://togethernetworkstest.testrail.io/index.php?/cases/view/44)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkHeaderAgeField">
+                  </a> <!-- checkHeaderAgeField -->
+                  <span class="method-name">checkHeaderAgeField</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#ageField&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52135}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c751e1cdc6162fca7744ab43eb9c616b
+*** Element info: {Using=id, value=ageField}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.checkHeaderAgeField(UserFormTest.java:157)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C10 - Проверить правильность перевода и наличие орфографических ошибок в заголовке поля 'Age'https://togethernetworkstest.testrail.io/index.php?/cases/view/10)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldWithSpaceAfterTheValue">
+                  </a> <!-- emailFieldWithSpaceAfterTheValue -->
+                  <span class="method-name">emailFieldWithSpaceAfterTheValue</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Вашу відповідь було записано.&apos;]&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52247}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ef85dcb2272a7ca5d079c2628d8fdb42
+*** Element info: {Using=xpath, value=//div[text()=&apos;Вашу відповідь було записано.&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.emailFieldWithSpaceAfterTheValue(UserFormTest.java:151)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C41 - Проверить корректную отправку данных c пробелом после введения Emailhttps://togethernetworkstest.testrail.io/index.php?/cases/view/41)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldWithSpaceBeforeTheValue">
+                  </a> <!-- emailFieldWithSpaceBeforeTheValue -->
+                  <span class="method-name">emailFieldWithSpaceBeforeTheValue</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Вашу відповідь було записано.&apos;]&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52269}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5b883dacd65fc03b5767aa6b16222e9d
+*** Element info: {Using=xpath, value=//div[text()=&apos;Вашу відповідь було записано.&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.emailFieldWithSpaceBeforeTheValue(UserFormTest.java:142)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C40 - Проверить корректную отправку данных c пробелом перед введением Emailhttps://togethernetworkstest.testrail.io/index.php?/cases/view/40)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldWithoutAtInTheEmail">
+                  </a> <!-- emailFieldWithoutAtInTheEmail -->
+                  <span class="method-name">emailFieldWithoutAtInTheEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.freebirdFormviewerViewItemsItemItem.freebirdFormviewerViewItemsTextTextItem.freebirdFormviewerViewEmailCollectionField.HasError&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6fc02d369e120debc6d4ffe21501938
+*** Element info: {Using=css selector, value=div.freebirdFormviewerViewItemsItemItem.freebirdFormviewerViewItemsTextTextItem.freebirdFormviewerViewEmailCollectionField.HasError}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.emailFieldWithoutAtInTheEmail(UserFormTest.java:121)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C22 - Проверить отображение предупреждающего сообщения и выделение блока без точек c отсутствием @ в 'Email'https://togethernetworkstest.testrail.io/index.php?/cases/view/22)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldWithoutDotsInTheDomain">
+                  </a> <!-- emailFieldWithoutDotsInTheDomain -->
+                  <span class="method-name">emailFieldWithoutDotsInTheDomain</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.freebirdFormviewerViewItemsItemItem.freebirdFormviewerViewItemsTextTextItem.freebirdFormviewerViewEmailCollectionField.HasError&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 502c05b003119c35ff025c26d4c99d66
+*** Element info: {Using=css selector, value=div.freebirdFormviewerViewItemsItemItem.freebirdFormviewerViewItemsTextTextItem.freebirdFormviewerViewEmailCollectionField.HasError}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.emailFieldWithoutDotsInTheDomain(UserFormTest.java:112)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C21 - Проверить отображение предупреждающего сообщения и выделение блока без точек в доменной части поля 'Email'https://togethernetworkstest.testrail.io/index.php?/cases/view/21)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendFormWithRequiredFields">
+                  </a> <!-- sendFormWithRequiredFields -->
+                  <span class="method-name">sendFormWithRequiredFields</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Вашу відповідь було записано.&apos;]&quot;}
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52384}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ce39a3fc0489163a380eb6ea4156b63c
+*** Element info: {Using=xpath, value=//div[text()=&apos;Вашу відповідь було записано.&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.sendFormWithRequiredFields(UserFormTest.java:71)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C80 - Отправить форму с заполнением всех обязательных полейhttps://togethernetworkstest.testrail.io/index.php?/cases/view/80)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendFormWithoutAge">
+                  </a> <!-- sendFormWithoutAge -->
+                  <span class="method-name">sendFormWithoutAge</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: No selector specified
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MacBook-Pro-Sergej.local&apos;, ip: &apos;192.168.31.51&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/_5/4df2wbts2wj...}, goog:chromeOptions: {debuggerAddress: localhost:52408}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71f8d5760b3a9ac971cd05451bb54b38
+*** Element info: {Using=css selector, value=}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at userform.UserFormTest.sendFormWithoutAge(UserFormTest.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(C78 - Отправить форму без заполнения поля 'Age'https://togethernetworkstest.testrail.io/index.php?/cases/view/78)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-userform_UserFormTest-class-failed -->
+          <div class="suite-userform_UserFormTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">userform.UserFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDescriptionForm">
+                  </a> <!-- checkDescriptionForm -->
+                  <span class="method-name">checkDescriptionForm</span>
+                  <em>
+(C7 - Проверить правильность перевода и наличие орфографических ошибок в описании формыhttps://togethernetworkstest.testrail.io/index.php?/cases/view/7)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkHeaderEmailField">
+                  </a> <!-- checkHeaderEmailField -->
+                  <span class="method-name">checkHeaderEmailField</span>
+                  <em>
+(C8 - Проверить правильность перевода и наличие орфографических ошибокhttps://togethernetworkstest.testrail.io/index.php?/cases/view/8)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkHeaderForm">
+                  </a> <!-- checkHeaderForm -->
+                  <span class="method-name">checkHeaderForm</span>
+                  <em>
+(C6 - Проверить правильность перевода и наличие орфографических ошибок в заголовке формыhttps://togethernetworkstest.testrail.io/index.php?/cases/view/6)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkObligatoryEmailField">
+                  </a> <!-- checkObligatoryEmailField -->
+                  <span class="method-name">checkObligatoryEmailField</span>
+                  <em>
+(C9 - Проверить обозначение обязательного поля рядом с заголовкомhttps://togethernetworkstest.testrail.io/index.php?/cases/view/9)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldIsEmpty">
+                  </a> <!-- emailFieldIsEmpty -->
+                  <span class="method-name">emailFieldIsEmpty</span>
+                  <em>
+(C42 - Проверить отображение предупреждающего сообщения и выделение блока при пустом поле 'Email'https://togethernetworkstest.testrail.io/index.php?/cases/view/42)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emailFieldWithoutDomainInTheEmail">
+                  </a> <!-- emailFieldWithoutDomainInTheEmail -->
+                  <span class="method-name">emailFieldWithoutDomainInTheEmail</span>
+                  <em>
+(C26 - Проверить отображение предупреждающего сообщения и выделение блока без точек без доменной части в 'Email'https://togethernetworkstest.testrail.io/index.php?/cases/view/26)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nameFieldIsEmpty">
+                  </a> <!-- nameFieldIsEmpty -->
+                  <span class="method-name">nameFieldIsEmpty</span>
+                  <em>
+(C57 - Проверить отображение предупреждающего сообщения и выделение блока при пустом поле 'Name'https://togethernetworkstest.testrail.io/index.php?/cases/view/57)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendFormWithoutEmail">
+                  </a> <!-- sendFormWithoutEmail -->
+                  <span class="method-name">sendFormWithoutEmail</span>
+                  <em>
+(C77 - Отправить форму без заполнения поля 'Email'https://togethernetworkstest.testrail.io/index.php?/cases/view/77)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendFormWithoutName">
+                  </a> <!-- sendFormWithoutName -->
+                  <span class="method-name">sendFormWithoutName</span>
+                  <em>
+(C79 - Отправить форму без заполнения поля 'Name'https://togethernetworkstest.testrail.io/index.php?/cases/view/79)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-userform_UserFormTest-class-passed -->
+        </div> <!-- panel userform_UserFormTest -->
+        <div panel-name="test-xml-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;userform.UserFormTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;userform.UserFormTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- userform.UserFormTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for userform.UserFormTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for userform.UserFormTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for userform.UserFormTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_userform_UserFormTest');
+function tableData_userform_UserFormTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'sendFormWithoutEmail')
+data.setCell(0, 2, 'userform.UserFormTest')
+data.setCell(0, 3, 606);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'emailFieldWithSpaceBeforeTheValue')
+data.setCell(1, 2, 'userform.UserFormTest')
+data.setCell(1, 3, 587);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'emailFieldWithSpaceAfterTheValue')
+data.setCell(2, 2, 'userform.UserFormTest')
+data.setCell(2, 3, 581);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sendFormWithoutName')
+data.setCell(3, 2, 'userform.UserFormTest')
+data.setCell(3, 3, 575);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'sendFormWithRequiredFields')
+data.setCell(4, 2, 'userform.UserFormTest')
+data.setCell(4, 3, 570);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sendFormWithoutAge')
+data.setCell(5, 2, 'userform.UserFormTest')
+data.setCell(5, 3, 561);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'emailFieldWithoutDomainInTheEmail')
+data.setCell(6, 2, 'userform.UserFormTest')
+data.setCell(6, 3, 287);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'emailFieldIsEmpty')
+data.setCell(7, 2, 'userform.UserFormTest')
+data.setCell(7, 3, 242);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'nameFieldIsEmpty')
+data.setCell(8, 2, 'userform.UserFormTest')
+data.setCell(8, 3, 221);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'emailFieldWithoutDotsInTheDomain')
+data.setCell(9, 2, 'userform.UserFormTest')
+data.setCell(9, 3, 169);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'emailFieldWithoutAtInTheEmail')
+data.setCell(10, 2, 'userform.UserFormTest')
+data.setCell(10, 3, 169);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkDescriptionForm')
+data.setCell(11, 2, 'userform.UserFormTest')
+data.setCell(11, 3, 50);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkHeaderForm')
+data.setCell(12, 2, 'userform.UserFormTest')
+data.setCell(12, 3, 37);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkHeaderEmailField')
+data.setCell(13, 2, 'userform.UserFormTest')
+data.setCell(13, 3, 36);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkObligatoryEmailField')
+data.setCell(14, 2, 'userform.UserFormTest')
+data.setCell(14, 3, 32);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ageFieldIsEmpty')
+data.setCell(15, 2, 'userform.UserFormTest')
+data.setCell(15, 3, 27);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkHeaderAgeField')
+data.setCell(16, 2, 'userform.UserFormTest')
+data.setCell(16, 3, 21);
+window.suiteTableData['userform_UserFormTest']= { tableData: data, tableDiv: 'times-div-userform_UserFormTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-userform_UserFormTest">
+              </div> <!-- times-div-userform_UserFormTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for userform.UserFormTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-userform_UserFormTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">userform.UserFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ageFieldIsEmpty</span>
+                <span class="method-start">4815 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">4846 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">4930 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkDescriptionForm</span>
+                <span class="method-start">9011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">9061 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">9144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkHeaderAgeField</span>
+                <span class="method-start">13009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">13031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">13109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkHeaderEmailField</span>
+                <span class="method-start">17060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">17096 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">17175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkHeaderForm</span>
+                <span class="method-start">21512 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">21550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">21633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkObligatoryEmailField</span>
+                <span class="method-start">25676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">25708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">emailFieldIsEmpty</span>
+                <span class="method-start">29755 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">29997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emailFieldWithSpaceAfterTheValue</span>
+                <span class="method-start">34185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">34767 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">34845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emailFieldWithSpaceBeforeTheValue</span>
+                <span class="method-start">38861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">39449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">39530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emailFieldWithoutAtInTheEmail</span>
+                <span class="method-start">43513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">43683 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">43763 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">emailFieldWithoutDomainInTheEmail</span>
+                <span class="method-start">47584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">47871 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47955 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emailFieldWithoutDotsInTheDomain</span>
+                <span class="method-start">51817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">51987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">52065 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nameFieldIsEmpty</span>
+                <span class="method-start">55978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">56199 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">56284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendFormWithRequiredFields</span>
+                <span class="method-start">60279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">60849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">60936 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendFormWithoutAge</span>
+                <span class="method-start">64839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">65400 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">65486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sendFormWithoutEmail</span>
+                <span class="method-start">69422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">70029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">70111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sendFormWithoutName</span>
+                <span class="method-start">73928 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">74503 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

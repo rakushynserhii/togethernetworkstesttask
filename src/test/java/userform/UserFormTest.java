@@ -24,7 +24,7 @@ public class UserFormTest {
     public void beforeMethod() {
         System.setProperty("webdriver.chrome.driver", "driver/chromedrivermac");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless", "start-maximized", "--disable-dev-shm-usage", "disable-infobars", "--disable-extensions");
+        //options.addArguments("--headless", "start-maximized", "--disable-dev-shm-usage", "disable-infobars", "--disable-extensions");
         driver = new ChromeDriver(options);
         driver.get(Constants.webForm);
         userForm = new UserForm(driver);
@@ -139,7 +139,7 @@ public class UserFormTest {
         userForm.fillInTextFields("    email@gmail.com", "21", "Ivan");
         click(userForm.excellentMood);
         click(userForm.sendButton);
-        Assert.assertTrue(driver.findElement(userForm.sendFormSuccess).isDisplayed());
+        Assert.assertTrue(userForm.isSendSuccess());
     }
 
     @Test(description = "C41 - Проверить корректную отправку данных c пробелом после введения Email" +
@@ -148,7 +148,7 @@ public class UserFormTest {
         userForm.fillInTextFields("email@gmail.com     ", "21", "Ivan");
         click(userForm.excellentMood);
         click(userForm.sendButton);
-        Assert.assertTrue(driver.findElement(userForm.sendFormSuccess).isDisplayed());
+        Assert.assertTrue(userForm.isSendSuccess());
     }
 
     @Test(description = "C10 - Проверить правильность перевода и наличие орфографических ошибок в заголовке поля 'Age'" +

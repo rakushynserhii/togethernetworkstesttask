@@ -78,10 +78,15 @@ public class UserForm extends BasePage {
         return isDisplayed(nameField);
     }
 
+    public boolean isSendSuccess() {
+        waitVisibility(sendFormSuccess);
+        return isDisplayed(sendFormSuccess);
+    }
+
     public void fillInTextFields(String email, String age, String name) {
         Assert.assertTrue(isPageLoaded());
         writeText(emailField, email);
-        //writeText(ageField, age);
+        writeText(ageField, age);
         writeText(nameField, name);
     }
 

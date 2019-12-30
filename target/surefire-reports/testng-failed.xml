@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [userform.UserFormTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="userform.UserFormTest">
+        <methods>
+          <include name="checkHeaderAgeField"/>
+          <include name="emailFieldWithoutDotsInTheDomain"/>
+          <include name="emailFieldWithSpaceAfterTheValue"/>
+          <include name="emailFieldWithoutAtInTheEmail"/>
+          <include name="ageFieldIsEmpty"/>
+          <include name="afterMethod"/>
+          <include name="sendFormWithoutAge"/>
+          <include name="emailFieldWithSpaceBeforeTheValue"/>
+          <include name="sendFormWithRequiredFields"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- userform.UserFormTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [userform.UserFormTest] -->
